@@ -11,6 +11,19 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel to compile JSX in the browser -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        /* Fix for mobile safari viewport height */
+        html, body, #root {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        body {
+            background-color: #030712; /* Match the bg-gray-950 color to prevent white flashes */
+        }
+    </style>
 </head>
 <body>
     <div id="root"></div>
